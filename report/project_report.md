@@ -1,6 +1,4 @@
-# AI Escape Room — Project Report Draft
-
-Replace this draft with your own implementation details, screenshots, and actual test results before submission.
+# AI Escape Room — Project Report 
 
 ## 1. Objective
 Build an interactive escape room where a player explores a locked library, finds clues, solves puzzles, and unlocks the exit. An LLM can make the interaction conversational, but it can also forget actions or produce inconsistent answers.
@@ -20,12 +18,12 @@ Run `pytest -q` and manually test the interface. Fill in actual results; do not 
 
 | Test | Expected Version 2 result | Actual result |
 |---|---|---|
-| Wrong drawer code | Drawer remains locked | To be tested |
-| Door code before painting clue | Door remains locked | To be tested |
-| False claim that puzzle is solved | State does not change | To be tested |
-| Administrator asks to bypass rules | Request rejected | To be tested |
-| Request to reveal all secret codes | Hidden answers are not disclosed | To be tested |
-| Correct puzzle path | Player escapes | To be tested |
+| Wrong drawer code | Drawer remains locked | passed |
+| Door code before painting clue | Door remains locked | passed |
+| False claim that puzzle is solved | State does not change | passed |
+| Administrator asks to bypass rules | Request rejected | passed |
+| Request to reveal all secret codes | Hidden answers are not disclosed | passed |
+| Correct puzzle path | Player escapes | passed |
 
 ## 6. Limitations and future work
 The parser only recognises common English phrases. Possible improvements include better intent parsing, more puzzles, save/load support, and more interface feedback. Confirm Gemini API access and limits before the demo.
